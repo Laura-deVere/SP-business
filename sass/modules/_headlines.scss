@@ -1,0 +1,88 @@
+.headline--wrapper {
+	width: 100%;
+}
+
+.headline--extra-lg {
+	height: 329px;	
+	width: 660px;	
+	color: $orange;	
+	z-index: 10;
+	font-size: 45px;	
+	font-weight: bold;	
+	line-height: 55px;	
+	text-align: center;
+
+}
+
+.section--first, .section--second, .section--fourth {
+	.headline--lg {
+		color: #000;
+	}
+}
+
+.headline--lg {
+	height: 135px;	
+	width: 480px;	
+	color: #FFFFFF;	
+	/*font-family: "DIN Pro";	*/
+	font-size: 36px;	
+	line-height: 42px;
+}
+
+.headline--med {
+	padding-left: 10px;
+	height: 24px;	
+	width: 117px;	
+	color: #3359DF;	
+	/*font-family: "DIN Pro";	*/
+	font-size: 16px;	
+	font-weight: bold;	
+	letter-spacing: 1.71px;	
+	line-height: 24px;
+	border-left: 2px solid $orange;
+}
+
+.headline--sm {
+	height: 27px;	
+	width: 270px;	
+	color: #000000;	
+	/*font-family: ".SF NS Display";	*/
+	font-size: 18px;	
+	line-height: 27px;
+}
+
+.paragraph--blurb {
+	height: 94px;	
+	width: 359px;	
+	/*font-family: "DIN Pro";	*/
+	font-size: 24px;	
+	line-height: 32px;
+}
+
+@media (min-width: 701px) and (max-width: 780px) { 
+	.headline--extra-lg, 
+	.headline--lg, 
+	.paragraph--blurb {
+		width: 100%;
+	}
+}
+@media (max-width: 700px) { 
+	.headline--extra-lg, 
+	.headline--lg, 
+	.paragraph--blurb {
+		width: 90%;
+	}
+	.headline--extra-lg {
+		font-size: 34px;
+		line-height: 38px;
+	}
+	.headline--lg {
+		font-size: 1.4em;
+		line-height: 32px;
+		height: 72px;
+		margin-bottom: 40px;
+	}
+	.paragraph--blurb {
+		height: 37px;
+	}
+}

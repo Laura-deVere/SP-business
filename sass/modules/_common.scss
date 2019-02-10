@@ -1,0 +1,183 @@
+html {
+	height: 100%;
+	overflow-y: initial;
+}
+
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	margin: 0;
+	padding: 0;
+	letter-spacing: .1px;	
+	height: 100%;
+}
+
+@-ms-viewport{
+  width: device-width;
+}
+
+.col--full {
+	width: 100%;
+}
+
+.col--2 {
+	width: 50%;
+}
+
+.col--3 {
+	width: 30%;
+}
+
+main {
+	p {
+		color: #fff;
+	}
+}
+
+section {
+	padding: 50px 0;
+	height: auto;
+	p {
+		color: #000;		
+	}
+}
+
+main, section {
+	width: 100%;
+	margin: 0 auto;
+	p {
+		height: 177px;	
+		max-width: 461px;	
+		/*font-family: Lato;	*/
+		font-size: 14px;	
+		line-height: 28px;
+		text-align: left;
+	}
+}
+
+
+#img--help {
+	/*width: 500px;*/
+	width: 100%;
+}
+
+#content-wrap {
+	max-width: 100%;
+}
+
+.content-wrapper {
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+main {
+	background-color: $blue;
+}
+
+.section--first, .section--second, .section--fourth {
+	background-color: $offwhite;
+}
+
+.section--third {
+	background-color: $green; 
+	p {
+		height: auto;	
+		width: 480px;	
+		color: #000000;	
+		/*font-family: ".SF NS Display";	*/
+		font-size: 16px;	
+		line-height: 27px;
+	}
+	img {
+		width: 404px;
+	}
+}
+
+.high-top-margin {
+	margin-top: 225px;
+	margin-bottom: 200px;
+}
+
+.section--fourth {
+	padding-bottom: 200px;
+	.large--slider {
+		>h3, >p {
+			width: 100%;
+			text-align: center;
+			margin: 0 auto;
+			padding: 0;
+		}
+		>h3 {
+			height: 75px;
+		}
+	}
+	.footer-slider-content {
+		display: flex;
+		justify-content: space-evenly;
+	}
+}
+
+@media (min-width: 701px) and (max-width: 780px) {
+	main, section, .section--third {
+		p {
+			width: 100%;
+			line-height: 16px;
+		}
+	}
+	.section--fourth {
+		padding-bottom: 100px;
+	}
+}
+
+@media (max-width: 765px) {
+	.content-wrapper {
+		width: 100%;
+	}
+}
+
+@media (max-width: 700px) {
+	.content-wrapper {
+		width: 90%;
+		flex-direction: column;
+	}
+	.col--2, .col--3 {
+		width: 100%;
+	}
+	.high-top-margin {
+	    margin-top: 0;
+	    margin-bottom: 50px;
+	}
+	#sec-3-graph { order: 2; }
+	#sec-3-header { order: 1; }
+	#img--help {
+		width: 100%;
+	}
+	main, section {
+		p {
+			line-height: 25px;
+			height: 100%;
+		}
+	}
+	.section--third { 
+		p {
+			width: 100%;
+		}
+	}
+	.section--fourth {
+		padding-bottom: 50px;
+		.large--slider {
+			h3 {
+				height: 52px;
+				margin-bottom: 0;
+			}
+		}
+		.footer-slider-content {
+			flex-direction: column;
+			text-align: center;
+			h4, p {
+				width: 100%;
+			}
+		}		
+	}
+}

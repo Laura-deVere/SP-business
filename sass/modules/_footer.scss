@@ -1,0 +1,28 @@
+footer {	
+	height: 97px;	
+	max-width: 100%;	
+	background: linear-gradient(155.42deg, #122FBB 0%, #020C72 100%);
+	.container {
+		display: flex;
+		height: 100%;
+	}	
+	.container-logo {
+		display: flex;
+	    align-items: center;	
+	}
+}
+
+.footer--info {
+	width: 50%;
+	text-align: right;
+	color: #fff;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 700px) { 
+	.footer--info {
+		font-size: 9px;
+	}
+ }

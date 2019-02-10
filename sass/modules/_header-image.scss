@@ -1,0 +1,50 @@
+.header-image-container {
+	width: 100%;
+	position: relative;
+	/*>h1 {
+		position: relative;
+	}
+	img {
+		position: absolute;
+		top: 45%;
+    	left: 14%;
+	}*/
+	h1 {
+		position: absolute;
+		/*top: 14%;*/
+		top: 27%;
+    	left: 19%;
+	}
+	img {
+		position: relative;
+		z-index: 9;
+		width: 78%;
+		display: block;
+		/*margin: 23% auto 0 auto;*/
+		margin: 32% auto 0 auto;
+	}
+}
+
+@media (min-width: 701px) and (max-width: 1024px) {
+	.header-image-container {
+		h1 {
+			top: 34%;
+   			left: 1%;
+		}
+		img {
+			margin: 66% auto 0 auto;
+		}
+	}
+}
+@media (max-width: 700px) { 
+	.header-image-container {
+		h1 {
+			left: 7%;
+			top: 28%;
+		}
+		img {
+			margin: 72% auto 0 auto;
+			width: 100%;
+		}
+	}
+}
