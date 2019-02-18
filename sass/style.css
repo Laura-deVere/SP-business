@@ -390,18 +390,21 @@ main {
       text-align: center; }
 
 .container-logo {
-  width: 50%; }
+  width: 50%;
+  align-self: flex-end; }
   .container-logo img {
-    height: 45px;
-    width: 155px;
+    height: 100px;
     margin-left: 25%; }
 
 @media (max-width: 700px) {
   .main-nav-list {
     display: none !important; }
 
-  .container-logo img {
-    width: 124px; } }
+ 	/*.container-logo {
+ 		img {
+ 			height: 105px;
+ 		}
+	} */ }
 .sidebar-wrapper {
   width: 29%;
   background: transparent;

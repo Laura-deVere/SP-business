@@ -16,7 +16,6 @@ class Slider {
 			for (let j = 0; j < btn.length; j++) {
 				btn[j].addEventListener('click', (e) => {
 					this.currentIndex = j;
-					console.log(e.target.parentNode.parentNode);
 					this.currentSlider = e.target.parentNode.parentNode;
 					this.currentImages();
 				});
@@ -45,6 +44,14 @@ class Slider {
 
 	setBtns() {
 		this.currentSliderBtns = [].slice.call(this.currentSlider.getElementsByClassName('slider-btn-1'));
+		// this.currentSliderBtns[this.currentIndex].style.backgroundColor = '#F4F4F4' ? 'black' : '#F4F4F4';
+		this.currentSliderImages.forEach((el, i) => {
+			if(i !== this.currentIndex) {
+				this.currentSliderBtns[i].style.backgroundColor = '#F4F4F4';
+			} else {
+				this.currentSliderBtns[i].style.backgroundColor = 'black';
+			}
+		});
 	}
 
 	selectImage() {

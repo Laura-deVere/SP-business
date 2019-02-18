@@ -24,9 +24,9 @@
 
 .container-logo {
 	width: 50%;
+	align-self: flex-end;
 	img {
-		height: 45px;	
-		width: 155px;
+		height: 100px;
 		margin-left: 25%;
 	}
 }
@@ -35,9 +35,9 @@
 	.main-nav-list {
 	  	display: none !important;	
 	 }
-  	.container-logo {
-  	img {
-  		width: 124px;
-  	}
-  }
+  	/*.container-logo {
+  		img {
+  			height: 105px;
+  		}
+ 	} */
 }
