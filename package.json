@@ -4,16 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start:dev": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Laura-deVere/SP-business.git"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Laura-deVere/SP-business/issues"
+  "dependencies": {
+    "@webpack-cli/init": "^0.1.3",
+    "webpack-cli": "^3.2.3"
   },
-  "homepage": "https://github.com/Laura-deVere/SP-business#readme"
+  "devDependencies": {
+    "webpack": "^4.29.5",
+    "webpack-dev-server": "^3.1.14"
+  }
 }

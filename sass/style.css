@@ -387,7 +387,8 @@ main {
     .main-nav-wrapper .main-nav-list li {
       margin-right: 2em;
       line-height: 15px;
-      text-align: center; }
+      text-align: center;
+      cursor: pointer; }
 
 .container-logo {
   width: 50%;
